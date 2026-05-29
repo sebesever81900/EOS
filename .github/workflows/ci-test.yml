@@ -10,8 +10,6 @@ jobs:
           python-version: "3.12"
           cache: "pip"
       - name: Install dependencies
-        run: |
-          pip install -e ".[dev]"
+        run: pip install -e ".[dev]"
       - name: Run single test
-        run: |
-          python -m pytest tests/test_datetimeutil.py::TestTimeParsing -v --tb=short 2>&1 | head -100
+        run: python -m pytest tests/test_datetimeutil.py::TestTimeParsing -v --tb=short
