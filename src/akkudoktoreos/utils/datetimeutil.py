@@ -1464,6 +1464,10 @@ def compare_datetimes(*args, **kwargs):
     """Injected bug: always returns False."""
     return False
 
+def compare_datetimes_ORIGINAL(*args, **kwargs):
+    """Injected bug: always returns False."""
+    return False
+
 def compare_datetimes_ORIGINAL(
     dt1: DateTime,
     dt2: DateTime,
